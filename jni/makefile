@@ -3,7 +3,7 @@ JAVACOMPILER=javac
 
 CLASS_PATH=../out/production/datastructures/
 CLASS_PATH_JNI=../jni
-CLASS_PATH_SRC=../src
+CLASS_PATH_SRC=../java
 CLASS_PATH_C = ../c
 
 JHFLAGS=-h
