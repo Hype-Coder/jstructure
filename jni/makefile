@@ -17,10 +17,10 @@ clean: rm $(CLASS_PATH_JNI)/libdatastructure.so $(CLASS_PATH_JNI)/template_Point
 
 
 libdatastructure.so : Pointer.h
-					gcc $(CFLAGS) -shared -o libdatastructure.so $(CLASS_PATH_C)/pointer.c
+	gcc $(CFLAGS) -shared -o libdatastructure.so $(CLASS_PATH_C)/pointer.c
 
 
 Pointer.h: $(CLASS_PATH)/template/Pointer.class
-			javac -d $(CLASS_PATH) -classpath $(CLASS_PATH)/ -h $(CLASS_PATH_JNI) $(CLASS_PATH_SRC)/template/Pointer.java	
+	javac -d $(CLASS_PATH) -classpath $(CLASS_PATH)/ -h $(CLASS_PATH_JNI) $(CLASS_PATH_SRC)/template/Pointer.java	
 			
 			
